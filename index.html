@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Password Generator</h1>
+      <div class="divider"></div>
+      <p>
+        Generate your password in seconds and get feedback on your password
+        strength.
+      </p>
+    </div>
+    <div class="generator">
+      <div class="password">
+        <input type="text" value="test" />
+        <button>copy</button>
+      </div>
+      <div class="range">
+        <input type="range" min="4" max="32" value="8" />
+        <span>8</span>
+      </div>
+      <div class="options">
+        <div class="option">
+          <label>
+            <input type="checkbox" id="lowercaseCb" checked />
+            <span>a-z</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="uppercaseCb" />
+            <span>A-Z</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="digitsCb" />
+            <span>0-9</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="specialsCb" />
+            <span>*!@$#%^</span>
+          </label>
+        </div>
+      </div>
+      <button class="generate">generate</button>
+      <div class="comment">
+        <span id="comment"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
